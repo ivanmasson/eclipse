@@ -4,11 +4,11 @@ import javax.imageio.ImageIO;
 
 
 public class main {
-	public static long getCoorrelacion(int vector[],int vector2[])
+	public static float getMediaArit(int vector[])
 	{
-		long suma=0;
+		int suma=0;
 		for (int i=0;i<vector.length;i++)
-			suma=suma+((vector[i]& 0x00ffffff)*(vector2[i]& 0x00ffffff));
+			suma+=vector[i];
 		return (suma/vector.length);
 		
 		
@@ -18,7 +18,7 @@ public class main {
 		
 		BufferedImage img = null;
 		try {
-		    img = ImageIO.read(new File("actorPrincipal.bmp"));
+		    img = ImageIO.read(new File("prueba.jpg"));
 		} catch (IOException e) {
 		}
 		int h=img.getHeight();
@@ -28,7 +28,7 @@ public class main {
 		
 		//int pixel=img.getRGB(1, 1)& 0x00ffffff;//elimino el alpha
 		
-		System.out.println(getCoorrelacion(rgbArray,rgbArray));
+		System.out.println(getMediaArit(rgbArray));
 		
 	
 	
