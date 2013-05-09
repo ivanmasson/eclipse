@@ -30,11 +30,11 @@ public class main {
 		int w=img.getWidth();
 		
 		int [][] matriz = new int[w][h];
-		//int [] rgbArray = new int[w*h];
+		int [] rgbArray = new int[w*h];
 		
 		Raster r=img.getData();
 		
-	//	img.getRGB(0, 0, w,h, rgbArray, 0, 0);
+		img.getRGB(0, 0, w,h, rgbArray, 0, 0);
 		
 		for(int i=0; i<w;i++)
 			for(int j=0; j<h;j++)
