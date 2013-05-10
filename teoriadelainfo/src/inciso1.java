@@ -48,7 +48,7 @@ public class inciso1 {
 		}
 		
 		indice++;
-		System.out.println("El postulante mas parecido es el: "+indice+", Factor de Coorelacion: "+ max);
+		System.out.println("El postulante mas parecido es el: "+indice+", Factor de Corelacion: "+ max);
 		
 	}
 	
