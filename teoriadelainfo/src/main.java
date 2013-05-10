@@ -20,7 +20,7 @@ public class main {
 		
 
 		
-		//int pixel=img.getRGB(1, 1)& 0x00ffffff;//elimino el alpha
+		int pixel=0;
 		
 	
 		
