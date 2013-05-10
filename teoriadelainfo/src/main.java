@@ -19,8 +19,8 @@ public class main {
 		imagen img5=new imagen("postulante5.bmp");
 		imagen img6=new imagen("postulante6.bmp");
 		imagen img7=new imagen("postulante7.bmp");
-		imagen img8=new imagen("prueba2.jpg");
 		
+		System.out.println(img.getCoorelation(img));
 		System.out.println(img.getCoorelation(img1));
 		System.out.println(img.getCoorelation(img2));
 		System.out.println(img.getCoorelation(img3));
@@ -28,12 +28,12 @@ public class main {
 		System.out.println(img.getCoorelation(img5));
 		System.out.println(img.getCoorelation(img6));
 		System.out.println(img.getCoorelation(img7));
-		System.out.println(img.getCoorelation(img8));
 		
 		
 		
 		
-		int pixel=0;
+		
+		
 		
 	
 		

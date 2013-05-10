@@ -47,20 +47,20 @@ public class imagen {
 	{
 		double promedio=getPromedio();
 		//System.out.println(promedio);
-		double suma=0;
+		double promedio2=0;
 		
 		for(int i=0; i<w;i++)
 			for(int j=0; j<h;j++)
-				suma=suma+Math.pow(matriz[i][j]-promedio,2);
-		
+				promedio2=promedio2+Math.pow(matriz[i][j],2);
+		promedio2=promedio2/(w*h);
 		//System.out.println(Math.sqrt(suma/(w*h)));
 		
-		return Math.sqrt(suma/(w*h));
+		return Math.sqrt(promedio2-Math.pow(promedio,2));
 	}
 	
-	public long getPromedio()
+	public double getPromedio()
 	{
-		long suma=0;
+		double suma=0;
 		for(int i=0; i<w;i++)
 			for(int j=0; j<h;j++)
 				suma+=matriz[i][j];
@@ -73,14 +73,15 @@ public class imagen {
 	
 	public double getCov(imagen img1)
 	{
-		long suma=0;
+		double suma=0;
 		
 		int[][] matriz1=img1.getMatriz();
-		
+		double promedio=getPromedio();
+		double promedio2=img1.getPromedio();
 		
 		for(int i=0; i<w;i++)
 			for(int j=0; j<h;j++)
-				suma=suma+(matriz[i][j]*matriz1[i][j]);
+				suma=suma+((matriz[i][j])*(matriz1[i][j]));
 		
 		suma=suma/(w*h);
 		
