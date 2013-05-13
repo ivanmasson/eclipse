@@ -54,7 +54,7 @@ public class CompresionImagen {
 			for(int i = 0; i < bf.length(); i++) {
 				buffer = buffer<<1;
 				char bit =  bf.charAt(i);
-				if(bit == 1)
+				if(bit == '1')
 					buffer = buffer | 1;
 				cant_digitos++;
 				if(cant_digitos == 16) {
