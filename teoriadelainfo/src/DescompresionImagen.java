@@ -62,6 +62,9 @@ public class DescompresionImagen {
 			data.close();
 			arch_comp.close();
 			
+			
+			
+			
 			int pixels[] = getVectorPixels(arbol,bf,alto,ancho);
 			for(int i = 0; i< 279000; i++)
 				System.out.println(pixels[i]);
@@ -77,6 +80,7 @@ public class DescompresionImagen {
 		catch(Exception e){e.printStackTrace();};
 	}
 	
+
 	public BufferedImage getImageFromArray(int[] pixels, int width, int height) {
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         WritableRaster raster = (WritableRaster) image.getData();
@@ -87,7 +91,7 @@ public class DescompresionImagen {
 	
 	public int[] getVectorPixels(Nodo arbol, StringBuffer bf, int alto, int ancho) {
 		Nodo it = arbol;
-		int pixels[] = new int[ancho*alto];
+		int pixels[] = new int[ancho*alto*10];
 		int x = 0;
 		System.out.println("largo bf: " + bf.length());
 		for(int i = 0; i < bf.length(); i++) {
