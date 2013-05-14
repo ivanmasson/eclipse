@@ -24,7 +24,7 @@ public class inciso1 {
 		imagen img6=new imagen("postulante6.bmp");
 		imagen img7=new imagen("postulante7.bmp");
 		List<Double> a= new ArrayList<Double>();
-		a.add(img.getCoorelation(img));
+		//a.add(img.getCoorelation(img));
 		
 		a.add(img.getCoorelation(img1));
 		a.add(img.getCoorelation(img2));
