@@ -107,4 +107,36 @@ public class imagen {
 		
 	}
 	
+	//AGREGADO POR SANTI
+	
+		public int [] distribucionDeTonos()
+		{
+			int [] salida = new int [16];
+			for (int i=0; i<w; i++)
+				for (int j=0; j<h; j++)
+					salida[matriz[i][j]]++;
+			return salida;
+		}
+		
+		public double getPromedio2()
+		{
+			double suma = 0;
+			int [] aux = this.distribucionDeTonos();
+			for(int i=0; i<aux.length; i++)
+				suma += (aux[i]*i);
+			return (suma/(w*h));
+		}
+		
+		public double getDesvio2()
+		{
+			double prom = this.getPromedio2();
+			double suma = 0;
+			int [] aux = this.distribucionDeTonos();
+			for(int i=0; i<aux.length; i++)
+				suma += (Math.pow(i,2)*aux[i]); 
+			suma = (suma/(w*h));
+			prom = Math.pow(prom,2);
+			return (Math.sqrt(suma-prom));
+		}
+	
 }

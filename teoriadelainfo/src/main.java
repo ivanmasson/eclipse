@@ -17,6 +17,9 @@ public class main {
 		
 		//inciso1 i1= new inciso1();
 		
+		System.out.println("Inciso 2: ");
+		inciso2 i2 = new inciso2();
+		
 		//CompresionImagen c1 = new CompresionImagen();
 		//DescompresionImagen d1 = new DescompresionImagen();
 
