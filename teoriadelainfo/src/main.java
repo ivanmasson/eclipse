@@ -15,16 +15,11 @@ public class main {
 	
 	public static void main(String[] args) {
 		
-		inciso1 i1= new inciso1();
+		//inciso1 i1= new inciso1();
 		
 		CompresionImagen c1 = new CompresionImagen();
-		//DescompresionImagen d1 = new DescompresionImagen();
-		
-		
-		
-	
-		
-		
+		DescompresionImagen d1 = new DescompresionImagen();
+
 	
 	
 	}
